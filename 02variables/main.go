@@ -33,7 +33,7 @@ func main() {
 
 	// initialisation after dec
 	var x float64
-	x = 20.0
+	x = 20.3
 	fmt.Println(x)
 	fmt.Printf("x is of type %T\n", x)
 
