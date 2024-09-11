@@ -17,6 +17,8 @@ func main() {
 	fmt.Println("Enter your name: ")
 	name, err := reader.ReadString('\n')
 
+	fmt.Printf("Type of this input is %T\n", name)
+
 	if err != nil {
 		fmt.Println("Error reading name:", err)
 		return
@@ -46,6 +48,8 @@ func main() {
 		fmt.Println("Invalid rating. Please enter a number between 1 and 5.")
 		return
 	}
+
+	fmt.Printf("Type of this input is %T\n", rating)
 
 	// Check the rating and provide feedback
 	if rating > 3 {
