@@ -76,6 +76,10 @@ func main() {
 	// Example 10 removing some elements
 	testSlice := [7]int{1, 2, 3, 4, 5, 6, 7}
 	index := 3
+	// in case you wanna update above slice only and remove an ele
+	// then do not declare the size of slice and use same slice name 
+	// instead of slice9 in below line
+	// or if you declare size create a new slice
 	slice9 := append(testSlice[:index], testSlice[index+1:]...)
 	fmt.Println("New slice is ", slice9) // o/p=1,2,3,5,6,7
 }
